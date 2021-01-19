@@ -1,3 +1,70 @@
+## 0.6.0 (January 19, 2021)
+**BREAKING CHANGE**
+
+Terraform Plugin SDK upgraded to v2. 
+Acceptance tests are need Terraform 12.26+ versions.
+
+BUGFIX:
+* **Notification Rule :** Reading the time_restrictions corrected.
+* **Team Routing Rule :** Reading the time_restrictions corrected.
+* **Incident Service Rule :** Tags and details are implemented. Before it won't work due to schema <-> List conversion.
+* **Incident Template:** Stakeholder properties and impacted services read functions fixed to comply with their schema types.
+* **Integrations:** Responders only available when owner team isn't set. Therefore provider now only read and add responders to requests if owner team is not available.
+* **User:** UserAddress.city field has fixed. In future user resource will change to adopt Atlassian Opsgenie Platform changes.
+
+## 0.5.7 (December 24, 2020)
+IMPROVEMENTS:
+* **Integration Actions :** add support for ignore action
+
+
+## 0.5.6 (December 24, 2020)
+IMPROVEMENTS:
+* **Integration Actions :** add custom priority for create action (#177)
+
+
+## 0.5.5 (December 16, 2020)
+Improvement:
+* Add support for webhook integration (#197)
+
+
+## 0.5.4 (December 10, 2020)
+BUGFIX:
+* Able to set key in extra-properties field of condition for service incident rule (#204)
+
+
+## 0.5.3 (December 4, 2020)
+BUGFIX:
+* GO SDK v2 version synced to support none & escalation in schedule rotations 
+* Docs update
+
+
+## 0.5.2 (November 19, 2020)
+BUGFIX:
+* Fix opsgenie_notification_rule: Fix for issue (#188) 
+* Update integration name restrictions (#187)
+* Docs update (#194)
+
+
+## 0.5.1 (October 16, 2020)
+IMPROVEMENTS:
+* Added missing options to user resource (#179-#180)
+* Added actions to opsgenie_alert_policy (#186)
+
+
+## 0.5.0 (September 18, 2020)
+NEW RESOURCE:
+* Custom user role implemented (#161)
+
+## 0.4.9 (September 17, 2020)
+NEW RESOURCE:
+* Incident Template implemented (#178)
+
+
+## 0.4.8 (September 4, 2020)
+NEW RESOURCE:
+* Notification rule implemented (#121)
+
+
 ## 0.4.7 (August 26, 2020)
 
 IMPROVEMENTS:
