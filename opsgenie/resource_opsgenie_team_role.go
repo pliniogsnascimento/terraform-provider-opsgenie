@@ -104,21 +104,21 @@ func expandOpsGenieTeamRoleRights(d *schema.ResourceData) []team.Right {
 }
 
 func resourceOpsGenieReadContext(context.Context, *schema.ResourceData, interface{}) diag.Diagnostics {
-	return nil
+	panic("Not implemented")
 }
 
 func resourceOpsGenieUpdateContext(context.Context, *schema.ResourceData, interface{}) diag.Diagnostics {
-	return nil
+	panic("Not implemented")
 }
 
 func resourceOpsGenieDeleteContext(context.Context, *schema.ResourceData, interface{}) diag.Diagnostics {
-	return nil
+	panic("Not implemented")
 }
 
 func validateOpsGenieteamRoleName(interface{}, string) ([]string, []error) {
-	return nil, nil
+	panic("Not implemented")
 }
 
 func validateOpsGenieTeamRoleTeamId(i interface{}, s string) ([]string, []error) {
-	return nil, nil
+	panic("Not implemented")
 }
